@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* wrappers */
+
+body {
+  background-color: hsl(216, 29%, 10%);
+  min-height: 100svh;
+  font-family: Overpass;
+}
+
+.wrapper {
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 200px auto 200px auto;
+  background-color: hsl(218, 28%, 17%);
+}
+
+.content-wrapper {
+  margin: 0 25px;
+  padding-bottom: 20px;
+}
+
+.thank-you-wrapper {
+  display: none;
+}
+
+/* start elements */
+
+.icon-star {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: hsl(214, 19%, 21%);
+}
+
+.start-header {
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.start-text {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.start-numbers-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.start-number-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 50%;
+  background-color: hsl(214, 19%, 21%);
+  color: hsl(217, 12%, 63%);
+}
+
+.start-submit-button {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  padding: 12px 0px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+}
