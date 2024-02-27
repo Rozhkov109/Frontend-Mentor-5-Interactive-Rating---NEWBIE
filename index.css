@@ -75,6 +75,13 @@ body {
   border-radius: 50%;
   background-color: hsl(214, 19%, 21%);
   color: hsl(217, 12%, 63%);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.start-number-button:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 
 .start-submit-button {
@@ -84,4 +91,8 @@ body {
   padding: 12px 0px;
   border-radius: 30px;
   letter-spacing: 2px;
+}
+
+.start-submit-button:hover {
+  cursor: pointer;
 }
