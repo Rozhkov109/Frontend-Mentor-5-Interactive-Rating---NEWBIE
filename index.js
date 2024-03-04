@@ -1,23 +1,49 @@
-const numberButtons = document.querySelectorAll(".start-number-button")
+const numberButtons = document.querySelectorAll(".rating-number-button")
+const submitButton = document.getElementById("submit-button")
 
 function CleanButtons() {
   numberButtons.forEach((button) => {
     button.style.backgroundColor = "hsl(214,19%,21%)"
     button.style.color = "hsl(21,12%,63%)"
+    button.classList.remove("active")
   })
 }
 
 function DrawNumberButton() {
   CleanButtons()
-  if (this.style.backgroundColor != "hsl(25,97%,53%)") {
+  if (!this.classList.contains("active")) {
     this.style.backgroundColor = "hsl(25,97%,53%)"
     this.style.color = "hsl(0,0%,100%)"
+    this.classList.add("active")
   } else {
     this.style.backgroundColor = "hsl(214,19%,21%)"
     this.style.color = "hsl(21,12%,63%)"
+    this.classList.remove("active")
   }
+}
+
+function DrawSubmitButton() {
+  this.style.backgroundColor = "hsl(0,0%,100%)"
+  this.style.color = "hsl(25,97%,53%)"
+}
+
+function ClearSubmitButton() {
+  this.style.backgroundColor = "hsl(25,97%,53%)"
+  this.style.color = "hsl(0,0%,100%)"
+}
+
+function Submit() {
+  numberButtons.forEach((button, index) => {
+    if (button.classList.contains("active")) {
+      console.log(index + 1)
+    }
+  })
 }
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", DrawNumberButton)
 })
+
+submitButton.addEventListener("mousedown", DrawSubmitButton)
+submitButton.addEventListener("mouseup", ClearSubmitButton)
+submitButton.addEventListener("click", Submit)

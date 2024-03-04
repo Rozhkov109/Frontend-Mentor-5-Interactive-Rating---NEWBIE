@@ -46,26 +46,26 @@ body {
   background-color: hsl(214, 19%, 21%);
 }
 
-.start-header {
+.rating-header {
   color: hsl(0, 0%, 100%);
   font-size: 24px;
   font-weight: 400;
 }
 
-.start-text {
+.rating-text {
   color: hsl(217, 12%, 63%);
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.start-numbers-wrapper {
+.rating-numbers-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.start-number-button {
+.rating-number-button {
   width: 40px;
   height: 40px;
   display: flex;
@@ -78,13 +78,13 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
-.start-number-button:hover {
+.rating-number-button:hover {
   background-color: hsl(217, 12%, 63%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 }
 
-.start-submit-button {
+.rating-submit-button {
   text-align: center;
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
@@ -93,6 +93,6 @@ body {
   letter-spacing: 2px;
 }
 
-.start-submit-button:hover {
+.rating-submit-button:hover {
   cursor: pointer;
 }
