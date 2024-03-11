@@ -35,7 +35,9 @@ function ClearSubmitButton() {
 function Submit() {
   numberButtons.forEach((button, index) => {
     if (button.classList.contains("active")) {
-      console.log(index + 1)
+      document.getElementById("thank-you-selected-rating").innerHTML = index + 1
+      document.getElementById("thank-you-wrapper").style.display = "block"
+      document.getElementById("rating-wrapper").style.display = "none"
     }
   })
 }

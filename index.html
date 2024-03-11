@@ -11,13 +11,11 @@
     <div class="wrapper">
       <div class="content-wrapper">
         <!-- Rating state start -->
-        <div class="rating-wrapper">
+        <div class="rating-wrapper" id="rating-wrapper">
           <img class="icon-star" src="images/icon-star.svg" alt="" />
           <h1 class="rating-header">How did we do?</h1>
 
-          <p class="rating-text">
-            Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-          </p>
+          <p class="rating-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
           <div class="rating-numbers-wrapper">
             <span class="rating-number-button">1</span>
@@ -32,20 +30,22 @@
         <!-- Rating state end -->
 
         <!-- Thank you state start -->
-        <div class="thank-you-wrapper">
-          <p class="thank-you-rating">You selected <span class="thank-you-selected-rating">Nothing ^_^</span> out of 5</p>
-          <h1 class="thank-you-header">Thank you!</h1>
+        <div class="thank-you-wrapper" id="thank-you-wrapper">
+          <img src="/images/illustration-thank-you.svg" alt="illustration-thank-you.svg" />
+          <div class="thank-you-rating-wrapper">
+            <p class="thank-you-rating">You selected <span id="thank-you-selected-rating">Nothing ^_^</span> out of 5</p>
+          </div>
+          <h2 class="thank-you-header">Thank you!</h2>
 
-          <p class="thank-you-text">
-            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
-          </p>
+          <p class="thank-you-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
         </div>
         <!-- Thank you state end -->
       </div>
     </div>
 
     <footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <b>Mykhailo Rozhkov</b> 2024
     </footer>
 
     <script src="index.js"></script>

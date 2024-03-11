@@ -96,3 +96,48 @@ body {
 .rating-submit-button:hover {
   cursor: pointer;
 }
+
+/* thank-you-elements */
+
+.thank-you-wrapper img {
+  display: block;
+  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 130px;
+}
+
+.thank-you-rating-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.thank-you-rating {
+  padding: 5px 15px;
+  margin-top: 25px;
+  font-size: 15px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 20%, 24%);
+  border-radius: 15px;
+  font-weight: 300;
+}
+
+.thank-you-header {
+  margin-bottom: 10px;
+  font-size: 26px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.thank-you-text {
+  font-size: 15px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0;
+  background-color: hsl(217, 27%, 24%);
+}
